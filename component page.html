@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway';
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+
+        header {
+            width: 100%;
+            height: 3cm;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px 20px;
+            font-weight: 900;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header-top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .search-icon img {
+            width: 24px;
+            height: 24px;
+        }
+
+        h3 {
+         margin-left: 1cm;    
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .container h5 {
+            margin: 5px 10px;
+            font-weight: normal;
+            left: -5cm;
+            text-decoration: none;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -5cm; 
+            cursor: pointer;
+        }
+
+        .icons .icon {
+            margin-left: 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            padding-left: 200px;
+            font-weight: 500;
+            font-size: xx-large;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px; 
+            width: 75%;
+            height: auto;
+            padding-left: 70px;
+            padding-left: 200px;  
+        }        
+
+        .product-item {
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .prod-price {
+            margin-top: 5px;
+            margin-left: -4cm;
+            font-weight: lighter;
+        }
+
+        .prod-oldprice{
+            margin-left: -4cm;
+            text-decoration: line-through;
+            font-size: small;
+        }
+
+        p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: small;
+            margin-left: -3.5cm;
+            color: rgb(97, 95, 95);
+        }
+        p:hover{
+            text-decoration: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="search-icon">
+                <img src="OIP.jpeg" alt="Search Icon">
+            </div>
+            <h3>The Store</h3>
+            <div class="icons">
+                <div class="icon">
+                    <a href="login page.html" class="login-page">
+                        <img src="login image.jpeg" alt="login" width="24" height="24">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="cart page.html" class="cart-page">
+                        <img src="cart image.jpeg" alt="cart" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <h5>Home</h5>
+                <h5><a href="contact page.html" alt="contact">Contact</a></h5>
+            </div>
+        </div>
+    </header>
+    <div>
+        <h2>Products</h2>
+        <div class="products-grid">
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>Free Chicago Mockup</p>
+                <div class="prod-oldprice">$17.00 USD</div>
+                <div class="prod-price">$0.00 USD</div>
+            </div>
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>TGMC-Chicago 01</p>
+                <div class="prod-price">$17.00 USD</div>
+            </div>
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>TGMC-Chicago 02</p>
+                <div class="prod-price">$17.00 USD</div>
+            </div>
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>TGMC-Chicago 03</p>
+                <div class="prod-price">$17.00 USD</div>
+            </div>
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>TGMC-Chicago 04</p>
+                <div class="prod-price">$17.00 USD</div>
+            </div>
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>TGMC-Chicago 05</p>
+                <div class="prod-price">$17.00 USD</div>
+            </div>
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>TGMC-Chicago 06</p>
+                <div class="prod-price">$17.00 USD</div>
+            </div>
+            <div class="product-item">
+                <a href="product page.html" class="product-page">
+                <img src="TGMC-Chicago 01.webp" alt="Product Image">
+                </a>
+                <p>TGMC-Chicago 07</p>
+                <div class="prod-price">$17.00 USD</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

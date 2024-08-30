@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway';
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+
+        header {
+            width: 100%;
+            height: 3cm;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px 20px;
+            font-weight: 900;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header-top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .search-icon img {
+            width: 24px;
+            height: 24px;
+        }
+
+        h5{
+            display: flex;
+            align-items: center;
+            padding-right: 100px;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .container h5 {
+            margin: 5px 10px;
+            font-weight: normal;
+            left: -5cm;
+            text-decoration: none;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -5cm;
+            cursor: pointer;
+        }
+
+        .icons .icon {
+            margin-left: 15px;
+        }
+
+        header .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 100px;
+            max-width: 1200px;
+            height: auto;
+            max-height: 300px;
+        }
+
+        .image {
+            max-width: 800px;
+            margin-right: 40px;
+            padding-left: 10px;
+        }
+
+        .product-description {
+            max-width: 600px;
+            font-weight: normal;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-description h1 {
+            font-weight: normal;
+            font-size: 1.25cm;
+            font-family: 'roboto';
+        }
+
+        .product-price {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .qty-count {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 15px;
+        }
+
+        .qty-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .qty-button span {
+
+            flex: 1;
+            text-align: center;
+        }
+
+        #add-to-cart, #buy {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #buy {
+            background-color: darkslateblue;
+            color: #f8f8f8;
+            height: 1.5cm;
+            border-radius: 8px;
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .shop {
+            width: 4cm;
+            height: auto;
+            height: 1.5cm;
+            background: darkslateblue;
+        }
+
+        .payment-option {
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            font-size: medium;
+        }
+
+        p {
+            margin-top: 15px;
+            color: #555;
+            line-height: 1.5;
+            font-size: larger;
+        }
+
+        span {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="search-icon">
+                <img src="OIP.jpeg" alt="Search Icon">
+            </div>
+            <h3>The Store</h3>
+            <div class="icons">
+                <div class="icon">
+                    <a href="login page.html" class="login-page">
+                        <img src="login image.jpeg" alt="login" width="24" height="24">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="cart page.html" class="cart-page">
+                        <img src="cart image.jpeg" alt="cart" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <h5>Home</h5>
+                <h5><a href="contact page.html" alt="contact">Contact</a></h5>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <img class="image" id="image" src="TGMC-Chicago 01.webp" alt="Product Image">
+
+        <div class="product-description">
+            <h1>TGMC-Chicago 01</h1>
+            <div class="product-price">$17.00 USD</div>
+
+            <div class="qty-count">
+                <label>Quantity
+                    <input type="button" class="cart">
+                </label>
+                <button class="qty-button">
+                    <span data-action="minus">-</span>
+                    <span class="product-qty">1</span>
+                    <span data-action="add">+</span>
+                </button>
+            </div>
+
+            <input id="add-to-cart" type="button" value="Add to cart">
+            <button id="buy">
+                Buy with
+                <img src="pay image.jpeg" alt="Shop Pay" class="shop">
+            </button>
+            <p class="payment-option"><u>More payment options</u></p>
+            <p>⚡️ The wait is over!</p>
+            <p><span> The Global Mockup Collection: Chicago is officially live.</span> Inspired by the iconic city of Chicago, these premium mockups are crafted to bring your designs to life with unmatched quality and detail. Whether you're a designer or a creative, this collection is your new go-to for stunning presentations.</p>
+            <p><span>Don’t just imagine the possibilities—make them real.</span></p>
+            <p>Shop now</p>
+            <p>Share</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const qtyButton = document.querySelector('.qty-button');
+            const qtyMinus = qtyButton.querySelector('[data-action="minus"]');
+            const qtyAdd = qtyButton.querySelector('[data-action="add"]');
+            const qtyDisplay = qtyButton.querySelector('.product-qty');
+            let qtyValue = parseInt(qtyDisplay.textContent);
+
+            qtyMinus.addEventListener('click', function() {
+                if (qtyValue > 1) {
+                    qtyValue--;
+                    qtyDisplay.textContent = qtyValue;
+                }
+            });
+
+            qtyAdd.addEventListener('click', function() {
+                if (qtyValue < 10) {
+                    qtyValue++;
+                    qtyDisplay.textContent = qtyValue;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
